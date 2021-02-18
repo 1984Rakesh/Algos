@@ -5,5 +5,6 @@
         <page name='Validate Subsequence'/>
         <page name='Remove Duplicates From Linked List'/>
         <page name='MergeLinkedList'/>
+        <page name='Tournament Winner'/>
     </pages>
 </playground>
