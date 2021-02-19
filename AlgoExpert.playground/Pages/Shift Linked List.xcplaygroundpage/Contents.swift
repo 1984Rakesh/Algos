@@ -1,18 +1,4 @@
-class Program {
-    class LinkedList : CustomDebugStringConvertible{
-        var value: Int
-        var next: LinkedList?
-        
-        init(value: Int) {
-            self.value = value
-            next = nil
-        }
-        
-        var debugDescription: String {
-            return "\(value), \(next?.debugDescription ?? "$")"
-        }
-    }
-    
+extension Program {
     // this implementation is costly since it is using recursion, using simple loop causes more code but still stands efficient in terms of memory and CPU
     func nodeAtPositionFromLast(_ currentNode: LinkedList, _ position: inout Int,_ size: inout Int) -> (LinkedList,LinkedList) {
         size += 1

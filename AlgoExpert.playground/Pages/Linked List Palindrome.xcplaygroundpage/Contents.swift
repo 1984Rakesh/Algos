@@ -1,19 +1,4 @@
-class Program {
-    // This is an input class. Do not edit.
-    class LinkedList : CustomDebugStringConvertible{
-        var value: Int
-        var next: LinkedList?
-        
-        init(value: Int) {
-            self.value = value
-            next = nil
-        }
-        
-        var debugDescription: String {
-            return "\(value), \(next?.debugDescription ?? "$")"
-        }
-    }
-    
+extension Program {
     static func linkedListWithValues(_ values:[Int]) -> LinkedList? {
         guard values.count > 0 else {
             return nil
@@ -77,8 +62,6 @@ class Program {
         return isPalindrome( head: head, tail: tail)
     }
 }
-
-
 
 let list = Program.linkedListWithValues([0,1,2,2,1,0])
 var isPalindrome = Program().linkedListPalindrome(list!)

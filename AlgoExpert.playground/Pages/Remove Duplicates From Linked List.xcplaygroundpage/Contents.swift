@@ -1,20 +1,5 @@
-import 
 
-class Program {
-    class LinkedList : CustomDebugStringConvertible{
-        var value: Int
-        var next: LinkedList?
-        
-        init(value: Int) {
-            self.value = value
-            next = nil
-        }
-        
-        var debugDescription: String {
-            return "\(value), \(next?.debugDescription ?? "$")"
-        }
-    }
-    
+extension Program {
     func removeDuplicatesFromLinkedList(_ linkedList: LinkedList) -> LinkedList {
         var currentNode : LinkedList? = linkedList
         var previousNode : LinkedList? = nil
