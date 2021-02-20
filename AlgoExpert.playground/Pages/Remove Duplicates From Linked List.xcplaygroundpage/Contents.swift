@@ -15,27 +15,7 @@ extension Program {
         
         return linkedList
     }
-    
-    static func linkedListWithValues(_ values:[Int]) -> LinkedList? {
-        guard values.count > 0 else {
-            return nil
-        }
-        var head : LinkedList? = nil
-        var previousNode : LinkedList? = nil
-        var index = 0
-        repeat {
-            let newNode = LinkedList(value: values[index])
-            if( head == nil ){
-                head = newNode
-            }
-            previousNode?.next = newNode
-            previousNode = newNode
-            index += 1
-        } while index < values.count
-        
-        return head
-    }
 }
 
-let list = Program.linkedListWithValues([1,1,1,3,4,5,6,6,7,7,8,9,9])
+let list = LinkedList.linkedListWithValues([1,1,1,3,4,5,6,6,7,7,8,9,9])
 Program().removeDuplicatesFromLinkedList(list!)

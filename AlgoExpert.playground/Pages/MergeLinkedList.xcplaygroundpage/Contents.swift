@@ -1,24 +1,4 @@
 extension Program {
-    static func linkedListWithValues(_ values:[Int]) -> LinkedList? {
-        guard values.count > 0 else {
-            return nil
-        }
-        var head : LinkedList? = nil
-        var previousNode : LinkedList? = nil
-        var index = 0
-        repeat {
-            let newNode = LinkedList(value: values[index])
-            if( head == nil ){
-                head = newNode
-            }
-            previousNode?.next = newNode
-            previousNode = newNode
-            index += 1
-        } while index < values.count
-        
-        return head
-    }
-    
     func mergeLinkedLists(_ headOne: LinkedList, _ headTwo: LinkedList) -> LinkedList {
         var traverseList : LinkedList? = headOne.value < headTwo.value ? headOne : headTwo
         var traverseListPN : LinkedList? = nil
@@ -45,7 +25,7 @@ extension Program {
     }
 }
 
-let l1 = Program.linkedListWithValues([2,6,7,8])
-let l2 = Program.linkedListWithValues([1,3,4,5,9,10])
+let l1 = LinkedList.linkedListWithValues([2,6,7,8])
+let l2 = LinkedList.linkedListWithValues([1,3,4,5,9,10])
 let program = Program()
 program.mergeLinkedLists(l1!, l2!)

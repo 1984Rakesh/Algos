@@ -42,32 +42,12 @@ extension Program {
         let program = Program()
         return program._shiftLinkedList(head, k)
     }
-    
-    static func linkedListWithValues(_ values:[Int]) -> LinkedList? {
-        guard values.count > 0 else {
-            return nil
-        }
-        var head : LinkedList? = nil
-        var previousNode : LinkedList? = nil
-        var index = 0
-        repeat {
-            let newNode = LinkedList(value: values[index])
-            if( head == nil ){
-                head = newNode
-            }
-            previousNode?.next = newNode
-            previousNode = newNode
-            index += 1
-        } while index < values.count
-        
-        return head
-    }
 }
 
 
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, 2)
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, -2)
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, 8)
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, -8)
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, 6)
-Program.shiftLinkedList(Program.linkedListWithValues([0,1,2,3,4,5])!, -6)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, 2)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, -2)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, 8)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, -8)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, 6)
+Program.shiftLinkedList(LinkedList.linkedListWithValues([0,1,2,3,4,5])!, -6)

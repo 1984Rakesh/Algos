@@ -1,24 +1,4 @@
 extension Program {
-    static func linkedListWithValues(_ values:[Int]) -> LinkedList? {
-        guard values.count > 0 else {
-            return nil
-        }
-        var head : LinkedList? = nil
-        var previousNode : LinkedList? = nil
-        var index = 0
-        repeat {
-            let newNode = LinkedList(value: values[index])
-            if( head == nil ){
-                head = newNode
-            }
-            previousNode?.next = newNode
-            previousNode = newNode
-            index += 1
-        } while index < values.count
-        
-        return head
-    }
-    
     func lastNode(_ head:LinkedList ) -> LinkedList {
         if let next = head.next {
             return lastNode(next)
@@ -63,5 +43,5 @@ extension Program {
     }
 }
 
-let list = Program.linkedListWithValues([0,1,2,2,1,0])
+let list = LinkedList.linkedListWithValues([0,1,2,2,1,0])
 var isPalindrome = Program().linkedListPalindrome(list!)
