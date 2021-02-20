@@ -7,5 +7,6 @@
         <page name='MergeLinkedList'/>
         <page name='Tournament Winner'/>
         <page name='Linked List Palindrome'/>
+        <page name='Two Number Sum'/>
     </pages>
 </playground>
