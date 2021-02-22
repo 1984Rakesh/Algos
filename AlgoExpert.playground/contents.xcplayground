@@ -8,5 +8,6 @@
         <page name='Tournament Winner'/>
         <page name='Linked List Palindrome'/>
         <page name='Two Number Sum'/>
+        <page name='Find Closest Value in BST'/>
     </pages>
 </playground>
