@@ -9,5 +9,6 @@
         <page name='Linked List Palindrome'/>
         <page name='Two Number Sum'/>
         <page name='Find Closest Value in BST'/>
+        <page name='Branch Sums'/>
     </pages>
 </playground>
