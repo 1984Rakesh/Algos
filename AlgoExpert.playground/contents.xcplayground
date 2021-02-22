@@ -10,5 +10,6 @@
         <page name='Two Number Sum'/>
         <page name='Find Closest Value in BST'/>
         <page name='Branch Sums'/>
+        <page name='Node Depths'/>
     </pages>
 </playground>
