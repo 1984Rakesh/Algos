@@ -11,5 +11,6 @@
         <page name='Find Closest Value in BST'/>
         <page name='Branch Sums'/>
         <page name='Node Depths'/>
+        <page name='Product Sum'/>
     </pages>
 </playground>
