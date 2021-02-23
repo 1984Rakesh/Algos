@@ -12,5 +12,6 @@
         <page name='Branch Sums'/>
         <page name='Node Depths'/>
         <page name='Product Sum'/>
+        <page name='Depth-first Search'/>
     </pages>
 </playground>
