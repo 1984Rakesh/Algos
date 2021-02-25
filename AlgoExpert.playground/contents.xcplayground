@@ -14,5 +14,6 @@
         <page name='Product Sum'/>
         <page name='Depth-first Search'/>
         <page name='Longest Balanced Substring'/>
+        <page name='Binary Search'/>
     </pages>
 </playground>
