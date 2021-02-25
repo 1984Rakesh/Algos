@@ -13,5 +13,6 @@
         <page name='Node Depths'/>
         <page name='Product Sum'/>
         <page name='Depth-first Search'/>
+        <page name='Longest Balanced Substring'/>
     </pages>
 </playground>
