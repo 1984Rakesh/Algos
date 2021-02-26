@@ -18,5 +18,6 @@
         <page name='Bubble Sort'/>
         <page name='Insertion Sort'/>
         <page name='Find three largest numbers'/>
+        <page name='Selection Sort'/>
     </pages>
 </playground>
