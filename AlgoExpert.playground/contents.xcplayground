@@ -16,5 +16,6 @@
         <page name='Longest Balanced Substring'/>
         <page name='Binary Search'/>
         <page name='Bubble Sort'/>
+        <page name='Insertion Sort'/>
     </pages>
 </playground>
