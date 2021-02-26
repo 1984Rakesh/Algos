@@ -17,5 +17,6 @@
         <page name='Binary Search'/>
         <page name='Bubble Sort'/>
         <page name='Insertion Sort'/>
+        <page name='Find three largest numbers'/>
     </pages>
 </playground>
