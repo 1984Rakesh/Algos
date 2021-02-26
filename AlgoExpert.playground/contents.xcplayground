@@ -19,5 +19,6 @@
         <page name='Insertion Sort'/>
         <page name='Find three largest numbers'/>
         <page name='Selection Sort'/>
+        <page name='Zigzag Traverse'/>
     </pages>
 </playground>
