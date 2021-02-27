@@ -71,6 +71,8 @@ let array = [
     [7, 13, 14, 16]
 ]
 
+
+
 let program = Program()
 let op = program.zigZagTraverse(array:array)
 print(op)
