@@ -22,5 +22,6 @@
         <page name='Zigzag Traverse'/>
         <page name='Reverse Singly Linked List'/>
         <page name='Invert Binary Tree'/>
+        <page name='Flatten Binary Tree'/>
     </pages>
 </playground>
