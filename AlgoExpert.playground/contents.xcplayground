@@ -23,5 +23,6 @@
         <page name='Reverse Singly Linked List'/>
         <page name='Invert Binary Tree'/>
         <page name='Flatten Binary Tree'/>
+        <page name='Caesar Cipher Encryptor'/>
     </pages>
 </playground>
