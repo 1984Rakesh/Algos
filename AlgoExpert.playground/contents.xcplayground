@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' executeOnSourceChanges='true'>
     <pages>
         <page name='Shift Linked List'/>
         <page name='Validate Subsequence'/>
@@ -26,5 +26,8 @@
         <page name='Caesar Cipher Encryptor'/>
         <page name='Palindrome'/>
         <page name='Nth Fibonacci'/>
+        <page name='ArrayOfProducts'/>
+        <page name='SmallestDifference'/>
+        <page name='Three Number Sum'/>
     </pages>
 </playground>

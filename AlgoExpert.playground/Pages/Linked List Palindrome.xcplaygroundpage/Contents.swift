@@ -18,7 +18,7 @@ extension Program {
     }
     
     //this is worst time log(n)
-    func isPalindrome(head:LinkedList, tail:LinkedList) -> Bool {
+    func isPalindrome1(head:LinkedList, tail:LinkedList) -> Bool {
         var returnValue : Bool = false
         if( head === tail ){
             returnValue = true
@@ -26,20 +26,36 @@ extension Program {
         else if( head.value == tail.value ) {
             returnValue = true;
             if( head.next !== tail ) {
-                returnValue = isPalindrome(head: head.next!,
+                returnValue = isPalindrome1(head: head.next!,
                                            tail: nodePreviousTo(head.next!, previousTo: tail))
             }
         }
         return returnValue
     }
     
-    func _isPlaindrome(_ leftHead:LinkedList, _ rightHead:LinkedList ) {
-        
+    func solution1(_ head: LinkedList) -> Bool {
+        let tail = lastNode(head)
+        return isPalindrome1( head: head, tail: tail)
+    }
+    
+    func isPalindrome2(_ leftHead:LinkedList, _ rightHead:LinkedList) -> (LinkedList,Bool) {
+        if( rightHead.next == nil ){
+            return ( leftHead.next!, leftHead.value == rightHead.value )
+        }
+        else {
+            let isOuterPalidrome = isPalindrome2(leftHead, rightHead.next!)
+            let outerResult = isOuterPalidrome.1
+            let nextNode = isOuterPalidrome.0
+            return ( nextNode.next!, outerResult && (nextNode.value == rightHead.value))
+        }
+    }
+    
+    func solution2( _ head: LinkedList ) -> Bool {
+        return isPalindrome2( head, head).1
     }
     
     func linkedListPalindrome(_ head: LinkedList) -> Bool {
-        let tail = lastNode(head)
-        return isPalindrome( head: head, tail: tail)
+        return solution1(head)
     }
 }
 
